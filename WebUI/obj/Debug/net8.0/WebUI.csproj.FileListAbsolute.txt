@@ -143,3 +143,6 @@
 /Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.UI.dll
 /Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll
 /Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/obj/Debug/net8.0/WebUI.MvcApplicationPartsAssemblyInfo.cs
+/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/obj/Debug/net8.0/WebUI.sourcelink.json
+/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/bin/Debug/net8.0/DotNetEd.CoreAdmin.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/bin/Debug/net8.0/Mvc.Grid.Core.dll

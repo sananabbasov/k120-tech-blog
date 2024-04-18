@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "V9XBHCZwWXMIr9dKC6bXKuRwRo32FN4YgSmFfhJXDwrk3Fe0ENqr/wh7ZkuNHYF5PK5vcX4Qj3b1LYi8TwvlKQ==",
+  "dgSpecHash": "JUeOnj3YZD3hHnpj7XT0owZnMNJ+sOQux17ZFi1cEzWVAA4ePf/eO71l2ikHyXrHTrNihARj54LZyrnurRW19A==",
   "success": true,
   "projectFilePath": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/WebUI.csproj",
   "expectedPackageFiles": [
     "/Users/sanan/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/sanan/.nuget/packages/coreadmin/3.0.0/coreadmin.3.0.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.aspnetcore.cryptography.internal/8.0.3/microsoft.aspnetcore.cryptography.internal.8.0.3.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/8.0.3/microsoft.aspnetcore.cryptography.keyderivation.8.0.3.nupkg.sha512",
@@ -54,6 +55,7 @@
     "/Users/sanan/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/Users/sanan/.nuget/packages/nonfactors.grid.core.mvc6/7.2.0/nonfactors.grid.core.mvc6.7.2.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/sanan/.nuget/packages/system.composition/6.0.0/system.composition.6.0.0.nupkg.sha512",

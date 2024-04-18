@@ -1,0 +1,32 @@
+<form method="post">
+    <div class="form-group">
+     <input type="text" name="Title" class="form-control col-6 mr-3" placeholder="Article name"/>
+    </div>
+
+    <div class="form-group">
+      <input type="text" name="PhotoUrl" class="form-control col-6 mr-3" placeholder="Photo Url"/>
+    </div>
+
+    <div class="form-group">
+        <textarea name="Description"></textarea>
+    </div>  
+
+    <div class="form-group">
+        <label for="test">Navbar</label>
+        <input type="checkbox" name="IsNavbar" class="" id="test" />
+    </div>    
+
+    <div class="form-group">
+        <label for="test1">Featured</label>
+        <input type="checkbox" name="IsFeatured" class="" id="test1" />
+    </div>    
+  
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Categories</label>
+    <select name="CategoryId" asp-items="@ViewBag.Categories" class="form-control col-6" id="exampleFormControlSelect1">
+    </select>
+  </div>
+
+    <input type="submit" value="Create"  class="btn btn-primary"/>
+</form>
+

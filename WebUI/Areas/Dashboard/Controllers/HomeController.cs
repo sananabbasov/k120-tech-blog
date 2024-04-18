@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace WebUI.Areas.Dashboard.Controllers;
 
+
+[Authorize]
 [Area("Dashboard")]
 public class HomeController : Controller
 {
@@ -17,6 +20,7 @@ public class HomeController : Controller
     {
         _logger = logger;
     }
+
 
     public IActionResult Index()
     {
