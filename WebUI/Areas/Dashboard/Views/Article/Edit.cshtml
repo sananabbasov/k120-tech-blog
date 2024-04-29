@@ -1,17 +1,20 @@
 @model Article
 
 
-<form method="post">
+<form method="post" enctype='multipart/form-data'>
     <div class="form-group">
      <input type="text" value="@Model.Title" name="Title" class="form-control col-6 mr-3" placeholder="Article name"/>
     </div>
 
     <div class="form-group">
-      <input type="text" value="@Model.PhotoUrl" name="PhotoUrl" class="form-control col-6 mr-3" placeholder="Photo Url"/>
+      <input type="file" value="@Model.PhotoUrl" name="photo" class="form-control col-6 mr-3" placeholder="Photo Url"/>
+      <input type="hidden" value="@Model.PhotoUrl" name="PhotoUrl" class="form-control col-6 mr-3" placeholder="Photo Url"/>
+    <img class="img-fluid my-3" src="@Model.PhotoUrl" width="150" height="150" />
+    
     </div>
 
     <div class="form-group">
-        <textarea value="" name="Description">@Model.Description</textarea>
+        <textarea id="editor" value="" name="Description">@Model.Description</textarea>
     </div>  
 
     <div class="form-group">
@@ -39,6 +42,44 @@
     </select>
   </div>
 
+
+
     <input type="submit" value="Update"  class="btn btn-warning"/>
 </form>
 
+@section Scripts {
+ <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+
+<script>
+var KTCkeditorDocument = function () {
+    
+    // Private functions
+    var demo = function () {
+        ClassicEditor
+            .create( document.querySelector( '#editor' ),{
+                    mediaEmbed: {
+                        previewsInData: true
+                    },
+                })
+            .then( editor => {
+                // console.log( editor );
+            } )
+            .catch( error => {
+                // console.error( error );
+                Swal.fire("Info !", error, "error");
+            } );
+    }
+
+    return {
+        // public functions
+        init: function() {
+            demo();
+        }
+    };
+}();
+
+jQuery(document).ready(function() {
+    KTCkeditorDocument.init();
+});
+  </script>
+}

@@ -351,11 +351,13 @@
 
     <!-- Page level custom scripts -->
     <script src="~/admin/js/demo/datatables-demo.js"></script>
-<script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
 
-<script>
-CKEDITOR.replace('Description');
-</script>
+
+
+@RenderSection("Scripts", required: false)
+
+
+@* CKEDITOR.replace('Description'); *@
 </body>
 
 </html>

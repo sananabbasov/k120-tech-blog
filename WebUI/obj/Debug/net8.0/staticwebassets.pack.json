@@ -7969,6 +7969,30 @@
       "PackagePath": "staticwebassets/upload/small_09.jpg"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/2c59d06f-0b1f-4eea-bd40-af20f0f6df28.jpg",
+      "PackagePath": "staticwebassets/uploads/2c59d06f-0b1f-4eea-bd40-af20f0f6df28.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/46d7cb7f-30d4-458e-a4a1-11f222198252.jpg",
+      "PackagePath": "staticwebassets/uploads/46d7cb7f-30d4-458e-a4a1-11f222198252.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/687a1d82-6d67-4ff2-8b4c-1c037a30331a.png",
+      "PackagePath": "staticwebassets/uploads/687a1d82-6d67-4ff2-8b4c-1c037a30331a.png"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/8b13c2ab-1f32-41fe-9fda-1b346b71ef7c.jpg",
+      "PackagePath": "staticwebassets/uploads/8b13c2ab-1f32-41fe-9fda-1b346b71ef7c.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/b7192de2-0165-455a-a724-991696fb3f30.jpg",
+      "PackagePath": "staticwebassets/uploads/b7192de2-0165-455a-a724-991696fb3f30.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K120/MVC/BlogApp/WebUI/wwwroot/uploads/f4499066-0a7a-4d57-ab81-6abe5dfaf782.jpg",
+      "PackagePath": "staticwebassets/uploads/f4499066-0a7a-4d57-ab81-6abe5dfaf782.jpg"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

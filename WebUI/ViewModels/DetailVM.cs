@@ -6,11 +6,8 @@ using WebUI.Models;
 
 namespace WebUI.ViewModels;
 
-public class HomeVM
+public class DetailVM
 {
-    public List<Article> PopularArticles { get; set; }
+    public Article Article { get; set; }
     public List<Article> RecentArticles { get; set; }
-    public List<Article> PopularArticleOne { get; set; }
-    public List<Article> PopularArticleTwo { get; set; }
-
 }

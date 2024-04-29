@@ -4,7 +4,7 @@ using WebUI.Data;
 using WebUI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCoreAdmin();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -46,6 +46,6 @@ app.UseEndpoints(endpoint =>
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}/{seo?}");
 
 app.Run();

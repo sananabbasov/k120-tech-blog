@@ -4,17 +4,20 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using WebUI.Data;
+using WebUI.ViewModels;
 
 namespace WebUI.Controllers;
 
 public class ArticleController : Controller
 {
-    private readonly ILogger<ArticleController> _logger;
+    private readonly AppDbContext _conext;
 
-    public ArticleController(ILogger<ArticleController> logger)
+    public ArticleController(AppDbContext conext)
     {
-        _logger = logger;
+        _conext = conext;
     }
 
     public IActionResult Index()
@@ -22,14 +25,18 @@ public class ArticleController : Controller
         return View();
     }
 
-    public IActionResult Detail()
+    public IActionResult Detail(int id)
     {
-        return View();
+
+        var artcile = _conext.Articles.Include(x=>x.Category).Include(x=>x.User).SingleOrDefault(x=>x.Id == id);
+        artcile.ViewCount +=1;
+        _conext.Articles.Update(artcile);
+        _conext.SaveChanges();
+        DetailVM vm = new()
+        {
+            Article = artcile
+        };
+        return View(vm);
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View("Error!");
-    }
 }
